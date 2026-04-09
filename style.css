@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    color: #1f2937;
 }
 
 /* NAVBAR */
@@ -10,71 +10,115 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #1f2937;
+    background-color: #111827; /* deep navy */
     color: white;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
 /* HERO */
 .hero {
     background: url('Logo.png') center/cover no-repeat;
-    height: 400px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* dark overlay for luxury look */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-text h2 {
-    font-size: 36px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
+/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background: #10b981;
+    padding: 12px 24px;
+    background: #c9a34e; /* gold tone */
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-/* SECTIONS */
-.about, .contact {
-    padding: 40px;
+/* ABOUT */
+.about {
+    padding: 50px 20px;
     text-align: center;
+    background: #f9fafb;
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
 }
 
 /* SERVICES */
 .services {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 40px;
+    gap: 25px;
+    padding: 50px 20px;
+    background: #ffffff;
 }
 
 .card {
     background: #f3f4f6;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 260px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #111827;
+    color: white;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #1f2937;
+    background: #000;
     color: white;
+    font-size: 14px;
 }
