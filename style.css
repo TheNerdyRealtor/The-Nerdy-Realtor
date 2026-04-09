@@ -22,7 +22,7 @@ body {
 
 /* HERO */
 .hero {
-    background: url('Logo.png') center/cover no-repeat;
+    background: url('goldlogo.png') center/cover no-repeat;
     height: 450px;
     display: flex;
     align-items: center;
