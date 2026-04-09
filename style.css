@@ -1,41 +1,80 @@
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-background-color: #f5f5f5;
-color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-header {
-background: #1f2a24;
-color: white;
-padding: 15px;
-display: flex;
-justify-content: space-between;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1f2937;
+    color: white;
 }
 
-nav a {
-color: white;
-margin-left: 15px;
-text-decoration: none;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
 .hero {
-text-align: center;
-padding: 80px 20px;
-background: #e8efe9;
+    background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 36px;
 }
 
 .btn {
-display: inline-block;
-margin-top: 20px;
-padding: 10px 20px;
-background: #3d5a40;
-color: white;
-text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #10b981;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
+/* SECTIONS */
+.about, .contact {
+    padding: 40px;
+    text-align: center;
+}
+
+/* SERVICES */
 .services {
-display: flex;
-justify-content: space-around;
-padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2937;
+    color: white;
 }
