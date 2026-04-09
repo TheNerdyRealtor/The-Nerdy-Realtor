@@ -27,7 +27,7 @@ body {
 
 /* HERO */
 .hero {
-    background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa') center/cover no-repeat;
+    background: url('logo.png') center/cover no-repeat;
     height: 400px;
     display: flex;
     align-items: center;
